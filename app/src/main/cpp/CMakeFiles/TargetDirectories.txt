@@ -1,0 +1,3 @@
+/Users/maggie/AndroidStudioProjects/RtmpGet/app/src/main/cpp/CMakeFiles/rebuild_cache.dir
+/Users/maggie/AndroidStudioProjects/RtmpGet/app/src/main/cpp/CMakeFiles/edit_cache.dir
+/Users/maggie/AndroidStudioProjects/RtmpGet/app/src/main/cpp/CMakeFiles/native-lib.dir
