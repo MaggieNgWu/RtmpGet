@@ -182,7 +182,7 @@ extern "C"
     int pFlags;			/* unused, but kept to avoid breaking ABI */
 
     unsigned short socksport;
-    unsigned short port;
+    unsigned short socksportport;
 
 #ifdef CRYPTO
 #define RTMP_SWF_HASHLEN	32
