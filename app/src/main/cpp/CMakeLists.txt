@@ -15,7 +15,8 @@ project("rtmpget")
 # Gradle automatically packages shared libraries with your APK.
 
 include_directories(${CMAKE_SOURCE_DIR}/include/librtmp)
-set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -L${CMAKE_SOURCE_DIR}/libs/armv8")
+include_directories(${CMAKE_SOURCE_DIR}/pull)
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -L${CMAKE_SOURCE_DIR}/libs/armv8" )
 
 add_library( # Sets the name of the library.
              native-lib
@@ -24,7 +25,10 @@ add_library( # Sets the name of the library.
              SHARED
 
              # Provides a relative path to your source file(s).
-             native-lib.cpp )
+             native-lib.cpp
+
+             pull/rtmpget.cpp
+                )
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
