@@ -16,7 +16,7 @@ project("rtmpget")
 
 include_directories(${CMAKE_SOURCE_DIR}/include/librtmp)
 include_directories(${CMAKE_SOURCE_DIR}/pull)
-set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -L${CMAKE_SOURCE_DIR}/libs/armv8" )
+set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -L${CMAKE_SOURCE_DIR}/libs/${CMAKE_ANDROID_ARCH_ABI}" )
 
 add_library( # Sets the name of the library.
              native-lib
